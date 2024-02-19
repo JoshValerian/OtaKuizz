@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">OtaKuizz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_payer">Hola Jugador!!</string>
+    <string name="play">Jugar</string>
+    <string name="otaku">Eres un autentico Otakuizzer???</string>
+    <string name="send">Enviar</string>
+    <string name="back">Volver</string>
+    <string name="retry">Reintentar</string>
+    <string name="congrats">Enhorabuena!!</string>
+    <string name="defeated">Has sido derrotado!!</string>
+    <string name="app_name_title">OtaKuizz - Pregunta %d/%d.</string>
+    <string name="rating">Has conseguido acertar %d de %d preguntas.</string>
+    <string name="about_text">Otakuiz es un juego de trivia móvil que pone a prueba tus conocimientos sobre manga. Los jugadores responden a una serie de preguntas relacionadas con diferentes géneros de manga y ganan puntos basados en la rapidez y precisión de sus respuestas.</string>
+    <string name="author">Otakuiz fue desarrollado por Santosgo, un apasionado del desarrollo de móviles y aspirante a otaku en sus ratos libres.</string>
+    <string name="version">Esta app se encuentra en su versión 1.0</string>
+    <string name="rules_text">Selecciona la respuesta de las opciones dadas.\n\nCada vez que aciertas una respuesta, avanzas a la siguiente pregunta, ¡más rápido que Naruto corriendo hacia su ramen!\nSi te equivocas en la respuesta, ¡tu juego termina! Pero no te preocupes, no es el fin del mundo, solo es el final de un episodio.\n\nPuedes volver a la pantalla de inicio usando “upButton” o “atrás” desde la pantalla del juego, y esto también terminará tu juego... al igual que cuando Light cierra su Death Note.\n\n¡Pero recuerda, siempre puedes empezar un nuevo capítulo!</string>
+    <string name="rules">Reglas</string>
+    <string name="about">Acerca de</string>
+</resources>

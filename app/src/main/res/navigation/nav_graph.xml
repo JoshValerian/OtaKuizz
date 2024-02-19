@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.otakuizz.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_rulesFragment"
+            app:destination="@id/rulesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.otakuizz.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_gamewonFragment"
+            app:destination="@id/gamewonFragment"
+            app:popUpTo="@id/titleFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment"
+            app:popUpTo="@id/titleFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamewonFragment"
+        android:name="com.example.otakuizz.GamewonFragment"
+        android:label="fragment_gamewon"
+        tools:layout="@layout/fragment_gamewon" >
+        <action
+            android:id="@+id/action_gamewonFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <argument
+            android:name="numQuest"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="numRight"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.example.otakuizz.GameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" >
+        <action
+            android:id="@+id/action_gameOverFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <argument
+            android:name="numQuest"
+            app:argType="integer" />
+        <argument
+            android:name="numRight"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.otakuizz.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <deepLink
+            app:uri="android-app://example.google.app/aboutFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.example.otakuizz.RulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" >
+        <deepLink
+            app:uri="android-app://example.google.app/rulesFragment"/>
+    </fragment>
+
+
+</navigation>
